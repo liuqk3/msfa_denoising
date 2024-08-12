@@ -1,0 +1,3 @@
+python denoising/test_denoising.py --weights exp/unet_decoupled_posemb_plus_25c_1/global/models/ps128_bs1/overall_net_latest.pth --ratio 10
+python denoising/test_denoising.py --weights exp/unet_decoupled_posemb_plus_25c_1/global/models/ps128_bs1/overall_net_latest.pth --ratio 20
+python denoising/test_denoising.py --weights exp/unet_decoupled_posemb_plus_25c_1/global/models/ps128_bs1/overall_net_latest.pth --ratio 40
