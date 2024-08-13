@@ -38,7 +38,7 @@ This repository contains the official code and data of the IEEE T-PAMI submissio
 
 <img src="assets/dataset.png" width="700px"/>
 
-The experimental data used in the paper is now publicly available at [Baidu Disk]() (code: `xxxx`). The collected dataset contains 150 scenes and is splited into a training set of 100 scenes and a test set of 50 scenes. Each scene contains a clean image, x10 noisy image, x20 noisy image, and x40 noisy image. All the scenes are captured using MQ022HG-IM-SM5X5 NIR 2nd Generation camera from Ximea Corporation, which is equipped with an MSFA with the size of 5x5 pattern. The total number of bands in an image is 25 ranging from 665nm to 960nm with 409x217 pixels in spatial resolution for each band. All the data are scaled to [0, 1].
+The experimental data used in the paper is now publicly available at [Baidu Disk](https://pan.baidu.com/s/1Rg8mwAFrPlm9PiBXeLjHCQ?pwd=9e2w) (code: `9e2w`). The collected dataset contains 150 scenes and is splited into a training set of 100 scenes and a test set of 50 scenes. Each scene contains a clean image, x10 noisy image, x20 noisy image, and x40 noisy image. All the scenes are captured using MQ022HG-IM-SM5X5 NIR 2nd Generation camera from Ximea Corporation, which is equipped with an MSFA with the size of 5x5 pattern. The total number of bands in an image is 25 ranging from 665nm to 960nm with 409x217 pixels in spatial resolution for each band. All the data are scaled to [0, 1]. Put the downloaded data to `data/scene_data_v4`.
 
 
 
@@ -58,20 +58,19 @@ bash train.sh
 
 
 ## Evaluation
-- Download the pretrained model, and put it to `exp/unet_decoupled_posemb_plus_25c_1`. Then run
+- You can download the pretrained model, and put it to `exp/unet_decoupled_posemb_plus_25c_1`. Then run
 ```
 bash test.sh
 ```
-- Modify `--weights` to your `/path/to/checkpoint`. 
-- Modify `--ratio` to select the noise ratio from [10, 20, 40].
-- Modify `--imgpath` to your `/path/to/save/results`.
+- Or Modify `--weights` to your `/path/to/checkpoint`. 
 
 
 
 
 ## Checkpoints
 
-- Currently, only the [Noise-decoupled Net]() is provided on Baidu Disk (code: `xxxx`).
+- Currently, only the [Noise-decoupled Net](https://pan.baidu.com/s/19aW08Rn_xTbBZirJbGxVGw?pwd=1z15) (code: `1z15`) is provided on Baidu Disk.
+
 
 <!-- |   Model   | Data | PSNR  | SSIM  | Checkpoint |
 | :-------: |  :--: | :---: | :---: | :---: |
@@ -79,7 +78,7 @@ bash test.sh
 |   UNet    | Synthetic  | 37.08 | 0.9715 | [UNet_syn.pth]|
 | Noise-decoupled Network | Synthetic  |  38.44 | 0.9749 | [NoiseDecoupled.pth] | -->
 
-| Ratio | Metrics | UNet (Real data) | UNet (Synthetic data) | [Noise-decoupled Net (Synthetic data)]() |
+| Ratio | Metrics | UNet (Real data) | UNet (Synthetic data) | [Noise-decoupled Net (Synthetic data)](https://pan.baidu.com/s/19aW08Rn_xTbBZirJbGxVGw?pwd=1z15) (code: `1z15`) |
 | :-------: |  :--: | :---: | :---: | :---: |
 | x10 | PSNR | 31.5964 | 32.0299 | 32.5345
 | x10 | SSIM | 0.9619 | 0.9627 | 0.9663
